@@ -17,8 +17,7 @@ brew install elixir
 echo "Setting up git"
 git config --global user.name "keyoung-n"
 git config --global user.email "keang.nage.3@hotmail.com"
-echo "Setting up ssh keys"
-git clone https://github.com/Keyoung-n/keys.git
-cp keys/* .ssh/
 echo "Setting up dotfiles"
 git clone https://github.com/Keyoung-n/dotfiles.git
+echo "Setting up rbenv"
+brew install rbenv
