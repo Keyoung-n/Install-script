@@ -1,14 +1,16 @@
 cd ~/
-echo "Setting up Ruby"
-\curl -sSL https://get.rvm.io | bash -s stable
+
 echo "Setting up Node"
 brew install node
-echo "Setting up elixir"
+echo "Setting up Elixir"
 brew install elixir
-echo "Setting up git"
+echo "Setting up Git"
 git config --global user.name "keyoung-n"
 git config --global user.email "keang.nage.3@hotmail.com"
-echo "Setting up dotfiles"
+echo "Setting up Dotfiles"
 git clone https://github.com/Keyoung-n/dotfiles.git
 cp dotfiles/vimrc .vimrc
 cp dotfiles/zshrc .zshrc
+echo "Setting up Rails"
+gem install bundler
+gem install rails
