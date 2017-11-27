@@ -1,5 +1,4 @@
 cd ~/
-
 echo "Setting up Node"
 brew install node
 echo "Setting up Elixir"
