@@ -1,15 +1,13 @@
 cd ~/
-echo "Setting up Node"
-brew install node
 echo "Setting up Elixir"
 brew install elixir
 echo "Setting up Git"
 git config --global user.name "keyoung-n"
 git config --global user.email "keang.nage.3@hotmail.com"
+echo "Installing wget"
+brew install wget
 echo "Setting up Dotfiles"
-git clone https://github.com/Keyoung-n/dotfiles.git
-cp dotfiles/vimrc .vimrc
-cp dotfiles/zshrc .zshrc
-echo "Setting up Rails"
-gem install bundler
-gem install rails
+echo "alias weather=\"curl wttr.in/johannesburg\"" >> .zshrc
+echo "--------------------------------------------------------------------"
+echo "add this to your .zshrc 'plugins=(git docker npm)'"
+echo "add this to your .zshrc 'ZSH_THEME=\"miloshadzic\"'"
